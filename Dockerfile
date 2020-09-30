@@ -6,7 +6,7 @@ RUN     apt-get -y update && \
 
 # dependencies
 RUN     apt-get -y --force-yes install \
-        wget curl build-essential tcpdump tcpreplay
+        wget curl build-essential tcpdump tcpreplay gzip
 
 RUN     apt-get clean && \
         rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
